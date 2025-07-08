@@ -11,19 +11,17 @@
 	<?php wp_body_open(); ?>
 	<div id="wrapper" class="hfeed">
 		<header>
-			<nav class="border-b border-black/15 absolute top-0 w-full">
+			<nav class="border-b border-black/15 w-full">
 				<div class="flex max-w-6xl p-4 mx-auto items-center justify-between">
-					<div class="text-2xl font-bold">
-						<?php
-						if (is_front_page() || is_home() || is_front_page() && is_home()) {
-							echo '<h1>';
-						}
-						echo '<a href="' . esc_url(home_url('/')) . '" title="' . esc_attr(get_bloginfo('name')) . '" rel="home">' . esc_html(get_bloginfo('name')) . '</a>';
-						if (is_front_page() || is_home() || is_front_page() && is_home()) {
-							echo '</h1>';
-						}
-						?>
-					</div>
+					<?php
+					if (is_front_page() || is_home() || is_front_page() && is_home()) {
+						echo '<h1 class="mb-0 text-2xl font-bold">';
+					}
+					echo '<a href="' . esc_url(home_url('/')) . '" title="' . esc_attr(get_bloginfo('name')) . '" rel="home">' . esc_html(get_bloginfo('name')) . '</a>';
+					if (is_front_page() || is_home() || is_front_page() && is_home()) {
+						echo '</h1>';
+					}
+					?>
 					<?php wp_nav_menu(array(
 						'theme_location' => 'main-menu',
 						'container' => 'div',

@@ -209,3 +209,5 @@ function blankslate_comment_count($count)
 		return $count;
 	}
 }
+
+remove_filter('the_content', 'wpautop');

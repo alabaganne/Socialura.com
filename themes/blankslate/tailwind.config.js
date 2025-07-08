@@ -1,10 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './*.php',
-    './**/*.php',
-    './src/**/*.js',
-    './src/**/*.jsx',
+  content: ["./src/**/*.{html,js}"], // Dummy content to prevent warnings
+  safelist: [
+    {pattern: /.*/}  // Include everything - disable purging completely
   ],
   theme: {
     extend: {

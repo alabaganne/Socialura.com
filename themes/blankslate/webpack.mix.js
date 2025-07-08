@@ -16,7 +16,7 @@ mix.disableNotifications();
 // Configure browsersync for local development
 if (!mix.inProduction()) {
    mix.browserSync({
-      proxy: 'socialura.local', // Change this to your local WordPress URL
+      proxy: 'http://localhost:10003/', // Change this to your local WordPress URL
       files: [
          '**/*.php',
          'dist/css/*.css',

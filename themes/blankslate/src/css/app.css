@@ -1,0 +1,38 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom WordPress Classes */
+@layer components {
+  /* WordPress alignment classes */
+  .alignleft {
+    @apply float-left mr-4;
+  }
+  
+  .alignright {
+    @apply float-right ml-4;
+  }
+  
+  .aligncenter {
+    @apply block mx-auto;
+  }
+  
+  /* WordPress caption */
+  .wp-caption {
+    @apply max-w-full;
+  }
+  
+  .wp-caption-text {
+    @apply text-sm text-gray-600 mt-2;
+  }
+  
+  /* WordPress galleries */
+  .gallery {
+    @apply grid grid-cols-3 gap-4;
+  }
+  
+  /* Screen reader text - keep existing styles */
+  .screen-reader-text {
+    @apply sr-only;
+  }
+}

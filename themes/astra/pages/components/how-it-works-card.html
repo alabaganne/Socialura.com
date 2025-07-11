@@ -1,0 +1,86 @@
+<style>
+	.how-it-works-container {
+		position: relative;
+		height: 100%;
+
+		svg {
+			position: absolute;
+			z-index: 1;
+		}
+		.card {
+			position: absolute;
+			top: 49%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: #fff;
+			border-radius: 1rem;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			width: 300px;
+			border: none;
+			text-align: center;
+			z-index: 2;
+			animation: customAnimation 3s ease-in-out infinite;
+		}
+		.avatar {
+			margin-bottom: 1rem;
+			font-size: 3.6rem;
+			width: 6rem;
+			height: 6rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			background: linear-gradient(264.11deg, rgb(251, 184, 141) 3.68%, rgb(247, 91, 90) 99.12%, rgba(247, 88, 88, 0) 99.13%, rgb(247, 88, 88) 99.13%);
+		}
+		h4 {
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+		.stats {
+			display: flex;
+			gap: 20px;
+			margin-top: 10px;
+		}
+		.stats div * {
+			display: block;
+		}
+	}
+	@keyframes customAnimation {
+		0%, 100% {
+			transform: translate(-50%, -50%) rotate(-4deg);
+		}
+		50% {
+			transform: translate(-50%, -50%) rotate(4deg);
+		}
+	}
+</style>
+
+<div class="how-it-works-container">
+	<div class="card">
+		<div class="avatar">👩🏼‍💻</div>
+		<h4 isolate="">@pourquoi_pas_toi</h4>
+		<div class="stats">
+			<div><b>811</b><span>Suivis</span></div>
+			<div><b>9,6k</b><span>followers</span></div>
+			<div><b>40,2k</b><span>likes</span></div>
+		</div>
+	</div>
+	<svg width="1149" height="705" viewBox="0 0 955 600" xmlns="http://www.w3.org/2000/svg" alt="how">
+		<path
+			id="Vector"
+			d="M978.436 132.448V600L199.783 460.744C73.187 442.906-14.982 325.818 2.857 199.22 20.693 72.623 137.781-15.545 264.38 2.293l714.056 130.155Z"
+			fill="url(#paint0_linear_76_35181)"></path>
+		<defs>
+			<linearGradient id="paint0_linear_76_35181" x1="43.102" y1="787.821" x2="679.388" y2="646.862" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#F9CE34"></stop>
+				<stop offset="0.505" stop-color="#EE2A7B"></stop>
+				<stop offset="1" stop-color="#6228D7"></stop>
+			</linearGradient>
+		</defs>
+	</svg>
+</div>

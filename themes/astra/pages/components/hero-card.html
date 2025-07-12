@@ -1,0 +1,110 @@
+<style>
+.sparkle {
+	position: absolute;
+	color: white;
+	font-size: 24px;
+	opacity: 0.8;
+}
+
+.sparkle-1 {
+	top: 15%;
+	left: 10%;
+	transform: rotate(-45deg);
+}
+
+.sparkle-2 {
+	top: 20%;
+	left: 15%;
+	transform: rotate(0deg);
+}
+
+.sparkle-3 {
+	top: 25%;
+	left: 8%;
+	transform: rotate(45deg);
+}
+
+.sparkle-4 {
+	top: 30%;
+	left: 12%;
+	transform: rotate(90deg);
+}
+
+.sparkle-right-1 {
+	top: 25%;
+	right: 15%;
+	font-size: 28px;
+}
+
+.sparkle-right-2 {
+	bottom: 25%;
+	right: 10%;
+	font-size: 32px;
+}
+
+.custom-card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* New animated banner styles */
+.boost-banner {
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	text-align: center;
+	width: 280px;
+	padding: 8px 40px;
+	font-size: 15px;
+	font-weight: 600;
+	transform: rotate(15deg);
+	box-shadow: 0 4px 12px rgba(26, 26, 26, 0.4);
+	z-index: 3;
+	border: 2px solid black;
+	border-radius: 20px;
+	animation: customAnimation 2s ease-in-out infinite;
+}
+
+.sparkle {
+	animation: float 3s ease-in-out infinite;
+}
+.sparkle:nth-child(odd) {
+	animation-delay: -1.5s;
+}
+</style>
+
+<div class="sparkle sparkle-1">✨</div>
+<div class="sparkle sparkle-2">|</div>
+<div class="sparkle sparkle-3">—</div>
+<div class="sparkle sparkle-4">—</div>
+<div class="sparkle sparkle-right-1">✨</div>
+<div class="sparkle sparkle-right-2">✨</div>
+
+<div class="custom-card-container">
+	<img src="https://www.follogram.co/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fmockup.499d197b.png&w=3840&q=75" alt="iPhone Mockup" />
+
+	<!-- Animated Banner -->
+	<div class="boost-banner bg-gradient-primary">Augmenter votre portée! 🚀</div>
+
+	<!-- Animated Card -->
+	<div class="custom-card">
+		<div class="avatar">👩🏻</div>
+		<h4 class="username">@pourquoi_pas_toi</h4>
+		<div class="stats">
+			<div>
+				<div class="stat-number">1,2k</div>
+				<div class="stat-title">Suivis</div>
+			</div>
+			<div>
+				<div class="stat-number">334,4k</div>
+				<div class="stat-title">followers</div>
+			</div>
+			<div>
+				<div class="stat-number">902,5k</div>
+				<div class="stat-title">likes</div>
+			</div>
+		</div>
+	</div>
+</div>

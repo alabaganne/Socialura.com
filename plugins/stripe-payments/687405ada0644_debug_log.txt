@@ -1,0 +1,26 @@
+[07/13/2025 07:14:53 PM] - handle_create_pi() -  Product ID: 676, Captcha Type: , Txn Counter: 0, IP: ::1
+[07/13/2025 07:14:53 PM] - Page load signature check done!
+[07/13/2025 07:14:53 PM] - Request usage count is valid for this IP addresss. IP: ::1, Request Count: 1
+[07/13/2025 07:14:53 PM] - Pre-API Submission validation successful. Expected: 3, Submitted: 3
+[07/13/2025 07:14:55 PM] - handle_confirm_pi() -  Product ID: 676, Captcha Type: , Txn Counter: 0, IP: ::1
+[07/13/2025 07:14:55 PM] - Page load signature check done!
+[07/13/2025 07:14:55 PM] - Request usage count is valid for this IP addresss. IP: ::1, Request Count: 2
+[07/13/2025 07:14:57 PM] - Payment processing started.
+[07/13/2025 07:14:57 PM] - Got product ID: 676
+[07/13/2025 07:14:57 PM] - Firing asp_ng_process_ipn_product_item_override filter.
+[07/13/2025 07:14:57 PM] - Firing asp_ng_process_ipn_payment_data_item_override filter.
+[07/13/2025 07:14:57 PM] - Using the Stripe API version 2022-11-15 or later for Payment Intents object. Need to retrieve the charge object separately.
+[07/13/2025 07:14:57 PM] - The transaction ID of this notification is: ch_3RkVMQIk4oSd7kUr0GUVFLmg
+[07/13/2025 07:14:57 PM] - Constructing checkout result and order data.
+[07/13/2025 07:14:57 PM] - Logged-in user's Username: admin
+[07/13/2025 07:14:57 PM] - Firing asp_ng_payment_completed filter.
+[07/13/2025 07:14:57 PM] - Firing asp_ng_payment_completed_update_pi filter.
+[07/13/2025 07:14:57 PM] - Firing asp_stripe_payment_completed action.
+[07/13/2025 07:14:57 PM] - Payment has been processed successfully.
+[07/13/2025 07:14:57 PM] - Redirecting to results page "http://localhost:10005/stripe-checkout-result/"
+
+[07/13/2025 07:52:27 PM] - FAILURE: Can't find product with ID: 487
+[07/13/2025 07:52:27 PM] - FAILURE: Can't find product with ID: 487
+[07/13/2025 07:52:45 PM] - FAILURE: Can't find product with ID: 487
+[07/13/2025 07:52:45 PM] - FAILURE: Can't find product with ID: 487
+[07/13/2025 07:52:47 PM] - FAILURE: Can't find product with ID: 487

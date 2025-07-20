@@ -204,3 +204,14 @@ require_once ASTRA_THEME_DIR . 'inc/core/markup/class-astra-markup.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-filters.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-hooks.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-functions.php';
+
+
+// Add to your theme's functions.php
+remove_filter('the_content', 'wpautop');
+remove_filter('the_excerpt', 'wpautop');
+
+// Remove wpautop from Popup Maker content
+add_filter('pum_popup_content', function($content) {
+    remove_filter('the_content', 'wpautop');
+    return $content;
+}, 1);

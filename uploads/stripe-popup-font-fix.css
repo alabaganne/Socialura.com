@@ -1,0 +1,73 @@
+/* Stripe Payment Popup Font Family Fix - Force Karla font */
+
+/* Override Pure CSS framework font declarations */
+.pure-g,
+.pure-g [class*="pure-u"] {
+    font-family: "Karla", sans-serif !important;
+}
+
+/* Override Stripe popup specific elements */
+#modal-header,
+#modal-body,
+#item-name,
+#item-descr,
+#test-mode {
+    font-family: "Karla", sans-serif !important;
+}
+
+/* Override form elements inside popup */
+#Aligner-item input,
+#Aligner-item select,
+#Aligner-item textarea,
+#Aligner-item label,
+#Aligner-item button,
+#Aligner-item .pure-button,
+#Aligner-item .pure-input-1 {
+    font-family: "Karla", sans-serif !important;
+}
+
+/* Override table elements in the order summary */
+#your-order,
+#your-order table,
+#your-order th,
+#your-order td {
+    font-family: "Karla", sans-serif !important;
+}
+
+/* Override any text in buttons */
+#submit-btn,
+#apply-coupon-btn,
+.pm-select-btn {
+    font-family: "Karla", sans-serif !important;
+}
+
+/* Override error messages */
+.form-err,
+#global-error,
+#card-errors,
+#amount-error {
+    font-family: "Karla", sans-serif !important;
+}
+
+/* Override tax/shipping text */
+#tax-shipping-cont {
+    font-family: "Karla", sans-serif !important;
+}
+
+/* Override any heading or paragraph inside modal */
+#modal-body h1,
+#modal-body h2,
+#modal-body h3,
+#modal-body h4,
+#modal-body h5,
+#modal-body h6,
+#modal-body p,
+#modal-body span,
+#modal-body div {
+    font-family: "Karla", sans-serif !important;
+}
+
+/* Override Stripe Elements iframe content if possible */
+#card-element {
+    font-family: "Karla", sans-serif !important;
+}

@@ -24,3 +24,28 @@
 [07/13/2025 07:52:45 PM] - FAILURE: Can't find product with ID: 487
 [07/13/2025 07:52:45 PM] - FAILURE: Can't find product with ID: 487
 [07/13/2025 07:52:47 PM] - FAILURE: Can't find product with ID: 487
+[07/21/2025 07:34:17 PM] - handle_create_pi() -  Product ID: 676, Captcha Type: , Txn Counter: 0, IP: ::1
+[07/21/2025 07:34:17 PM] - Page load signature check done!
+[07/21/2025 07:34:17 PM] - Request usage count is valid for this IP addresss. IP: ::1, Request Count: 1
+[07/21/2025 07:34:17 PM] - Pre-API Submission validation successful. Expected: 3, Submitted: 3
+[07/21/2025 07:34:19 PM] - handle_confirm_pi() -  Product ID: 676, Captcha Type: , Txn Counter: 0, IP: ::1
+[07/21/2025 07:34:19 PM] - Page load signature check done!
+[07/21/2025 07:34:19 PM] - Request usage count is valid for this IP addresss. IP: ::1, Request Count: 2
+[07/21/2025 07:34:21 PM] - Payment processing started.
+[07/21/2025 07:34:21 PM] - Got product ID: 676
+[07/21/2025 07:34:21 PM] - Firing asp_ng_process_ipn_product_item_override filter.
+[07/21/2025 07:34:21 PM] - Firing asp_ng_process_ipn_payment_data_item_override filter.
+[07/21/2025 07:34:21 PM] - Using the Stripe API version 2022-11-15 or later for Payment Intents object. Need to retrieve the charge object separately.
+[07/21/2025 07:34:22 PM] - The transaction ID of this notification is: ch_3RnPTaIk4oSd7kUr0o2U8M1S
+[07/21/2025 07:34:22 PM] - Constructing checkout result and order data.
+[07/21/2025 07:34:22 PM] - Logged-in user's Username: admin
+[07/21/2025 07:34:22 PM] - Firing asp_ng_payment_completed filter.
+[07/21/2025 07:34:22 PM] - Adding custom fields string to metadata - Profil TikTok ou Instagram: instagram.com/alabaganne9
+[07/21/2025 07:34:22 PM] - Firing asp_ng_handle_metadata filter.
+[07/21/2025 07:34:22 PM] - Updating payment metadata.
+[07/21/2025 07:34:22 PM] - Firing asp_ng_payment_completed_update_pi filter.
+[07/21/2025 07:34:22 PM] - Updating payment intent data.
+[07/21/2025 07:34:23 PM] - Firing asp_stripe_payment_completed action.
+[07/21/2025 07:34:23 PM] - Payment has been processed successfully.
+[07/21/2025 07:34:23 PM] - Redirecting to results page "http://localhost:10005/stripe-checkout-result/"
+

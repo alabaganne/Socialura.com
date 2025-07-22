@@ -67,9 +67,9 @@ echo wp_kses( '<style>' . $css . '</style>' . "\r\n", ASP_Utils::asp_allowed_tag
 				</div>
 				<?php } ?>
 				<span id="modal-close-btn" title="<?php esc_html_e( 'Close', 'stripe-payments' ); ?>" tabindex="0">
-					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-						<path d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
-					</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+						</svg>
 				</span>
 				<div id="item-name"><?php echo esc_html( $a['item_name'] ); ?></div>
 				<div id="item-descr"><?php echo esc_html( $a['data']['descr'] ); ?></div>
@@ -288,7 +288,7 @@ echo wp_kses( '<style>' . $css . '</style>' . "\r\n", ASP_Utils::asp_allowed_tag
 							<div class="pure-g">
 								<fieldset id="name-email-cont" style="width: 100%;">
 									<div class="pure-u-1 pure-u-md-11-24">
-										<label for="billing_name"><?php echo esc_html( apply_filters( 'asp_customize_text_msg', _x( 'Name', 'Customer name', 'stripe-payments' ), 'pp_billing_name' ) ); ?></label>
+										<label for="billing_name"><?php echo esc_html( apply_filters( 'asp_customize_text_msg', _x( 'Nom et prénom', 'Customer name', 'stripe-payments' ), 'pp_billing_name' ) ); ?></label>
 										<?php
                                         $customer_name = isset($a['data']['customer_name']) && !empty($a['data']['customer_name']) ? trim($a['data']['customer_name']) : '';
                                         $is_use_separate_name_fields_enabled = \AcceptStripePayments::get_instance()->get_setting('use_separate_name_fields_enabled', false);
@@ -330,7 +330,7 @@ echo wp_kses( '<style>' . $css . '</style>' . "\r\n", ASP_Utils::asp_allowed_tag
 									</div>
 									<div class="pure-u-md-1-24"></div>
 									<div class="pure-u-1 pure-u-md-12-24">
-										<label for="email"><?php echo esc_html( apply_filters( 'asp_customize_text_msg', __( 'Email', 'stripe-payments' ), 'pp_email' ) ); ?></label>
+										<label for="email"><?php echo esc_html( apply_filters( 'asp_customize_text_msg', __( 'E-mail', 'stripe-payments' ), 'pp_email' ) ); ?></label>
 										<div style="position: relative;">
 											<svg id="i-mail" class="icon input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
 												<path d="M2 26 L30 26 30 6 2 6 Z M2 6 L16 16 30 6" />
@@ -443,7 +443,7 @@ echo wp_kses( '<style>' . $css . '</style>' . "\r\n", ASP_Utils::asp_allowed_tag
 						</div>
 						<?php } ?>
 						<div id="card-cont" data-pm-name="def" class="pure-u-1">
-							<label for="card-element"><?php echo esc_html( apply_filters( 'asp_customize_text_msg', __( 'Credit or debit card', 'stripe-payments' ), 'pp_credit_or_debit_card' ) ); ?></label>
+							<label for="card-element"><?php echo esc_html( apply_filters( 'asp_customize_text_msg', __( 'Carte de crédit ou de débit', 'stripe-payments' ), 'pp_credit_or_debit_card' ) ); ?></label>
 							<div id="card-element">
 							</div>
 							<div id="card-errors" class="form-err" role="alert"></div>

@@ -1,0 +1,14 @@
+# WPVivid backup files
+wpvividbackups/
+*.zip
+
+# WordPress uploads (optional - these are usually user-generated content)
+# uploads/
+
+# WooCommerce logs
+uploads/wc-logs/
+
+# Cache and temporary files
+cache/
+temp/
+tmp/

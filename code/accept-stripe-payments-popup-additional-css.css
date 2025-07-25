@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body,
+* {
+	font-family: Karla, sans-serif;
+}
+
+#Aligner-item,
+#Aligner-item.popup-show {
+	border-radius: 1rem;
+	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#modal-header,
+#modal-body {
+	background: white;
+}
+
+#modal-header {
+	border-bottom: none;
+	padding: 1rem 1rem 0 1rem;
+	min-height: auto;
+}
+
+#item-name {
+	text-align: left;
+	font-weight: bold !important;
+	font-size: 1.5rem;
+	padding-top: 0;
+}
+#item-descr {
+	display: none;
+}
+#buttons-container {
+	border-top: none !important;
+	border-color: white;
+}
+
+#submit-btn {
+	background: var(--gradient-primary, linear-gradient(70deg, #f9ce34 -15%, #ee2a7b 40%, #6228d7 100%));
+	border-radius: 1rem;
+	transition-duration: 0.2s;
+	padding: 10px 20px;
+	font-family: 'Karla', sans-serif;
+	font-weight: 500;
+}
+
+#submit-btn:hover {
+	transform: scale(1.05);
+}
+
+.pure-form-stacked input[type='color'],
+.pure-form-stacked input[type='date'],
+.pure-form-stacked input[type='datetime-local'],
+.pure-form-stacked input[type='datetime'],
+.pure-form-stacked input[type='email'],
+.pure-form-stacked input[type='file'],
+.pure-form-stacked input[type='month'],
+.pure-form-stacked input[type='number'],
+.pure-form-stacked input[type='password'],
+.pure-form-stacked input[type='search'],
+.pure-form-stacked input[type='tel'],
+.pure-form-stacked input[type='text'],
+.pure-form-stacked input[type='time'],
+.pure-form-stacked input[type='url'],
+.pure-form-stacked input[type='week'],
+.pure-form-stacked label,
+.pure-form-stacked select,
+.pure-form-stacked textarea,
+#card-element {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border-radius: 0.4rem;
+}
+
+#tos-cont label.pure-checkbox {
+	display: flex;
+	align-items: start;
+	gap: 8px;
+	font-size: 14px;
+}
+
+#custom-fields-cont {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}

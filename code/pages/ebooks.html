@@ -1,0 +1,334 @@
+<!-- Title: 📙 Notre Catalogue E-Books -->
+
+<!-- Paragraph: Accédez à nos e-books pour en savoir plus sur les réseaux sociaux et comment développer votre audience. -->
+
+
+
+<!-- Code below -->
+ <style>
+	body {
+		background-color: #F3FAFF !important;
+	}
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.cards-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 30px;
+		margin-bottom: 40px;
+	}
+
+	.card {
+		background: #ffffff;
+		border-radius: 20px;
+		overflow: hidden;
+		transition: transform 0.3s ease;
+		position: relative;
+		max-width: 220px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card:hover {
+		transform: translateY(-5px);
+	}
+
+	.card-image {
+		width: 100%;
+		height: 275px;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.card .badge {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background: #fff;
+		color: #333;
+		padding: 6px 16px;
+		border-radius: 0;
+		border-bottom-right-radius: 20px;
+		font-size: 12px;
+		font-weight: 700;
+	}
+
+	.card .badge.best-seller {
+		background: #1285ff;
+		color: #fff;
+	}
+
+	.card .badge.nouveau {
+		background: #ff4757;
+		color: #fff;
+	}
+
+	.card-content {
+		padding: 25px;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	.card-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 8px;
+	}
+
+	.card-title {
+		font-size: 14px !important;
+		font-weight: 600 !important;
+		color: rgb(34, 141, 226) !important;
+		line-height: 1.3 !important;
+		flex: 1;
+		margin-right: 10px;
+	}
+
+	.card .card-description {
+		font-size: 12px;
+		color: #777;
+		line-height: 1.5;
+		margin-bottom: 20px !important;
+	}
+
+	.card-footer {
+		margin-top: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.price {
+		font-size: 16px;
+		font-weight: 700;
+		color: #1a1a1a;
+	}
+
+	.cta-button {
+		background: var(--gradient-primary);
+		color: white;
+		border: none;
+		padding: 12px 24px;
+		border-radius: 25px;
+		font-size: 12px;
+		width: 100%;
+		font-weight: 700;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	.cta-button:hover {
+		transform: scale(1.05);
+	}
+
+	/* Locked card styles */
+	.card.locked .card-image {
+		background: #000 !important;
+		position: relative;
+	}
+
+	.card.locked .card-image::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: inherit;
+		opacity: 0.1;
+		z-index: 0;
+	}
+
+	.card.locked .overlay-text {
+		opacity: 0.2;
+		z-index: 0;
+	}
+
+	.card.locked .badge {
+		display: none;
+	}
+
+	.lock-container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		z-index: 2;
+	}
+
+	.lock-icon {
+		width: 50px;
+		height: 50px;
+		background: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto 15px;
+		font-size: 24px;
+	}
+
+	.lock-text {
+		color: white;
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: 1px;
+	}
+
+	/* Specific gradient backgrounds for cards */
+	.gradient-1 {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	}
+
+	.gradient-2 {
+		background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+	}
+
+	.gradient-3 {
+		background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+	}
+
+	.gradient-4 {
+		background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+	}
+
+	.gradient-5 {
+		background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+	}
+
+	.gradient-6 {
+		background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+	}
+
+	/* Text overlay for gradient backgrounds */
+	.overlay-text {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+		color: white;
+		font-size: 24px;
+		font-weight: 700;
+	}
+</style>
+<div class="container">
+	<div class="cards-grid">
+		<!-- Card 1 -->
+		<div class="card">
+			<div class="card-image" style="background-image: url('https://socialura.com/wp-content/uploads/2025/07/instagram-algorithm.png')">
+				<span class="badge best-seller">Best Seller</span>
+			</div>
+			<div class="card-content">
+				<div class="card-header">
+					<span class="card-title">Algorithme Instagram</span>
+					<span class="price">18,90€</span>
+				</div>
+				<p class="card-description">Un guide complet sur l'algorithme d'Instagram</p>
+				<div class="card-footer">
+					<button class="cta-button asp-attach-product-1024">Achetez maintenant</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Card 2 -->
+		<div class="card">
+			<div class="card-image" style="background-image: url('https://socialura.com/wp-content/uploads/2025/07/tiktok-algo.png')">
+				<span class="badge best-seller">Best Seller</span>
+			</div>
+			<div class="card-content">
+				<div class="card-header">
+					<span class="card-title">Algorithme Tiktok</span>
+					<span class="price">18,90€</span>
+				</div>
+				<p class="card-description">Un guide complet sur l'algorithme tiktok</p>
+				<div class="card-footer">
+					<button class="cta-button asp-attach-product-1024">Achetez maintenant</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Card 3 -->
+		<div class="card">
+			<div class="card-image" style="background-image: url('https://socialura.com/wp-content/uploads/2025/07/grow-social-media.png')">
+				<span class="badge nouveau">Nouveau</span>
+			</div>
+			<div class="card-content">
+				<div class="card-header">
+					<span class="card-title">Maximisez votre impact avec le live</span>
+					<span class="price">19,90€</span>
+				</div>
+				<p class="card-description">Comment maximiser votre impact avec la vidéo en direct</p>
+				<div class="card-footer">
+					<button class="cta-button asp-attach-product-1024">Achetez maintenant</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Card 4 -->
+		<div class="card">
+			<div class="card-image" style="background-image: url('https://socialura.com/wp-content/uploads/2025/07/create-subscribers-sys-business.png')">
+				<span class="badge nouveau">Nouveau</span>
+			</div>
+			<div class="card-content">
+				<div class="card-header">
+					<span class="card-title">Le pouvoir des mèmes</span>
+					<span class="price">18,90€</span>
+				</div>
+				<p class="card-description">Le pouvoir des mèmes dans le marketing des médias sociaux</p>
+				<div class="card-footer">
+					<button class="cta-button asp-attach-product-1024">Achetez maintenant</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Card 5 - Locked -->
+		<div class="card locked">
+			<div class="card-image" style="background-image: url('https://socialura.com/wp-content/uploads/2025/07/cover-ebook-5-fr.jpg')">
+				<div class="lock-container">
+					<div class="lock-icon">🔒</div>
+					<div class="lock-text">ABONNÉS<br />UNIQUEMENT</div>
+				</div>
+			</div>
+			<div class="card-content">
+				<div class="card-header">
+					<span class="card-title">Boostez vos réseaux avec Pinterest</span>
+					<span class="price">16,90€</span>
+				</div>
+				<p class="card-description">Comment utiliser Pinterest pour la croissance des médias sociaux</p>
+				<div class="card-footer">
+					<button class="cta-button" disabled>Achetez maintenant</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Card 6 - Locked -->
+		<div class="card locked">
+			<div class="card-image" style="background-image: url('https://socialura.com/wp-content/uploads/2025/07/get-verified-instagram-tiktok.jpg')">
+				<div class="lock-container">
+					<div class="lock-icon">🔒</div>
+					<div class="lock-text">ABONNÉS<br />UNIQUEMENT</div>
+				</div>
+			</div>
+			<div class="card-content">
+				<div class="card-header">
+					<span class="card-title">Vérifiez votre compte</span>
+					<span class="price">17,90€</span>
+				</div>
+				<p class="card-description">Comment être vérifié sur les réseaux sociaux</p>
+				<div class="card-footer">
+					<button class="cta-button" disabled>Achetez maintenant</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

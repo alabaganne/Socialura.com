@@ -1,0 +1,10 @@
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const input = document.getElementById('username');
+    if (input) {
+      input.addEventListener('change', e => {
+        localStorage.setItem('username', e.target.value);
+      });
+    }
+  });
+</script>

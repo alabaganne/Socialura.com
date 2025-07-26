@@ -24,10 +24,7 @@ function sync_username_to_stripe_custom_field( $a ) {
                     // Try multiple selectors for the custom field
                     // The field might have different names/IDs based on configuration
                     const selectors = [
-                        'input[name="stripeCustomField[0]"]',
-                        'input[name="stripeCustomField"]',
-                        'input#asp-custom-field',
-                        'input.asp_product_custom_field_input[type="text"]'
+                        'input[name="stripeCustomFields[0]"]',
                     ];
                     
                     let fieldFound = false;

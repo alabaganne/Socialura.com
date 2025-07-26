@@ -12,3 +12,15 @@ uploads/wc-logs/
 cache/
 temp/
 tmp/
+
+# Plugins (except stripe-payments which has custom modifications)
+plugins/advance-custom-html/
+plugins/code-snippets/
+plugins/font-awesome/
+plugins/media-sync/
+plugins/popup-maker/
+plugins/stripe-payments-additional-custom-fields/
+plugins/stripe-payments-addons-update-checker/
+plugins/wp-mail-smtp/
+plugins/wpforms-lite/
+plugins/wpvivid-backuprestore/

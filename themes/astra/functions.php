@@ -215,3 +215,7 @@ add_filter('pum_popup_content', function($content) {
     remove_filter('the_content', 'wpautop');
     return $content;
 }, 1);
+
+
+remove_action( 'load-update-core.php', 'wp_update_themes' );
+add_filter( 'pre_site_transient_update_themes', '__return_null' );

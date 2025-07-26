@@ -24,3 +24,12 @@ plugins/stripe-payments-addons-update-checker/
 plugins/wp-mail-smtp/
 plugins/wpforms-lite/
 plugins/wpvivid-backuprestore/
+
+# Security - Debug logs and sensitive files
+plugins/stripe-payments/*debug_log.txt
+plugins/stripe-payments/*.log
+
+# Backup files
+*.dump
+*.bak
+*backup*

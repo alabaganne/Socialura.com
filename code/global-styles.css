@@ -369,7 +369,7 @@ html.pum-open.pum-open-overlay.pum-open-scrollable .pum-overlay.pum-active {
 
 .pricing-card {
 	position: relative;
-	background-color: #f8f8f8;
+	background-color: #f8f8f8 !important;
 	border: 2px solid #eee;
 	border-radius: 15px;
 	padding: 20px 15px 35px 15px;
